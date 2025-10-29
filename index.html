@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Prince School</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="{{ url_for('static', filename='logo.png') }}" class="nav-logo" alt="School Logo">
+      <h2>Crown Prince School</h2>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="active">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="home">
+    <div class="content">
+      <img src="{{ url_for('static', filename='logo.png') }}" class="main-logo" alt="School Logo">
+      <h1>Welcome to Crown Prince School</h1>
+      <p>Where excellence meets character.</p>
+
+      <video controls class="school-video">
+        <source src="{{ url_for('static', filename='school_video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</body>
+</html>

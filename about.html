@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Crown Prince School</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="{{ url_for('static', filename='logo.png') }}" class="nav-logo" alt="School Logo">
+      <h2>Crown Prince School</h2>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about" class="active">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="about">
+    <h1>Meet Our Leadership</h1>
+
+    <div class="staff-container">
+      <div class="staff">
+        <img src="{{ url_for('static', filename='proprietor.jpg') }}" alt="Proprietor">
+        <h3>Proprietor</h3>
+      </div>
+
+      <div class="staff">
+        <img src="{{ url_for('static', filename='headmaster.jpg') }}" alt="Headmaster">
+        <h3>Headmaster</h3>
+      </div>
+
+      <div class="staff">
+        <img src="{{ url_for('static', filename='assistant.jpg') }}" alt="Assistant Headmaster">
+        <h3>Assistant Headmaster</h3>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

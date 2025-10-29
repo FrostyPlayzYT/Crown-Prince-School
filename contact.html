@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Crown Prince School</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="{{ url_for('static', filename='logo.png') }}" class="nav-logo" alt="School Logo">
+      <h2>Crown Prince School</h2>
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach us below.</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Email:</strong> school_official@gmail.com</p>
+        <p><strong>Phone:</strong> +233 55 123 4567</p>
+        <p><strong>Address:</strong> Crown Prince School, Accra, Ghana</p>
+      </div>
+
+      <form method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
